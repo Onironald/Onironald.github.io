@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CHIDI ONOCHIE RONALD | Data Analyst Portfolio</title>
 <meta name="description" content="Data Analyst portfolio featuring Retail Sales, Logistics & Supply Chain, and E-Commerce Analytics projects.">
+<meta name="author" content="Chidi Onochie Ronald">
+<meta name="theme-color" content="#0b1223">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chidi Onochie Ronald | Data Analyst, Supply Chain & Operations Analytics">
+<meta property="og:description" content="Excel, SQL, Power BI and Python analytics backed by 5+ years of inventory and operations experience. Explore three end-to-end projects.">
+<meta property="og:url" content="https://onironald.github.io/">
+<meta property="og:image" content="https://onironald.github.io/images/profile-photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chidi Onochie Ronald | Data Analyst, Supply Chain & Operations Analytics">
+<meta name="twitter:description" content="Excel, SQL, Power BI and Python analytics backed by 5+ years of inventory and operations experience.">
+<meta name="twitter:image" content="https://onironald.github.io/images/profile-photo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -171,7 +182,60 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 .dataset-note{padding:16px 19px;border-left:4px solid #6366f1;background:#f5f7ff;border-radius:10px;margin-top:20px;line-height:1.7}
 @media(max-width:850px){.dataset-grid{grid-template-columns:1fr}.dataset-table{display:block;overflow-x:auto;white-space:normal}}
 </style>
+<style>
+/* ---- New sections ---- */
+.stats{max-width:1120px;margin:-48px auto 0;padding:0 24px;position:relative;z-index:5}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;box-shadow:var(--shadow-md);text-align:left}
+.stat strong{display:block;font-size:clamp(28px,3.6vw,38px);font-weight:800;color:var(--accent);letter-spacing:-0.02em;line-height:1.1}
+.stat span{display:block;margin-top:8px;color:var(--muted);font-size:14px;line-height:1.5}
 
+.marquee{overflow:hidden;background:var(--dark-2);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:14px 0;margin-top:0}
+.marquee-track{display:flex;gap:48px;width:max-content;animation:scroll 32s linear infinite}
+.marquee-track span{color:#93c5fd;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+.solve-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.solve-card h3{font-size:18px;margin:0 0 6px}
+.solve-card p{margin:0;color:var(--muted);font-size:15px}
+
+.who{background:var(--accent-light);border:1px solid #d6dcf5;border-radius:var(--radius);padding:24px 28px;margin-top:28px}
+.who h3{margin:0 0 6px;font-size:18px}
+.who p{margin:0;color:#374151}
+
+.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.quote{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-sm);position:relative}
+.quote::before{content:"\201C";position:absolute;top:6px;left:18px;font-size:60px;line-height:1;color:var(--accent);opacity:.25;font-weight:800}
+.quote p{margin:18px 0 14px;font-size:15.5px;color:#374151}
+.quote cite{font-style:normal;font-weight:700;font-size:14px;display:block}
+.quote cite span{display:block;font-weight:500;color:var(--muted);font-size:13px}
+
+.link-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.link-card{display:block;text-decoration:none;color:inherit}
+.link-card h3{margin:0 0 6px;font-size:19px}
+.link-card p{margin:0 0 12px;color:var(--muted);font-size:15px}
+.link-card .go{color:var(--accent);font-weight:700;font-size:14px}
+
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+.form{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:26px}
+.form label{display:block;font-size:13px;font-weight:700;color:#cbd5e1;margin:0 0 6px}
+.form .field{margin-bottom:16px}
+.form input,.form select,.form textarea{width:100%;font:inherit;font-size:15px;color:#fff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:12px 14px}
+.form select option{color:#151b2e}
+.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.form textarea{min-height:120px;resize:vertical}
+.form button{cursor:pointer;border:none;font:inherit;font-weight:700;font-size:14.5px}
+.contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 22px}
+.contact .btn.secondary{border-bottom:1px solid rgba(255,255,255,.35)}
+.copy-btn{cursor:pointer;background:transparent;font:inherit}
+.form-note{font-size:13px;color:#8892a6;margin:10px 0 0}
+@media(max-width:850px){
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .solve-grid,.quote-grid,.link-cards,.contact-grid{grid-template-columns:1fr}
+  .stats{margin-top:-32px}
+}
+</style>
 
 </head>
 <body>
@@ -179,7 +243,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 <div class="nav">
 <div class="logo">CHIDI ONOCHIE RONALD</div>
 <div class="nav-links">
-<a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="Chidi_Onochie_Ronald_Resume_Data_Analyst.pdf" target="_blank" rel="noopener">Resume</a><a href="#contact">Contact</a>
+<a href="#about">About</a><a href="#projects">Projects</a><a href="#solve">Services</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="Chidi_Onochie_Ronald_Resume_Data_Analyst.pdf" target="_blank" rel="noopener">Resume</a><a href="#contact">Contact</a>
 </div>
 </div>
 </nav>
@@ -192,12 +256,30 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 <p>I combine practical operations experience with Excel, SQL, MySQL, Power BI and Python to analyze business performance, identify patterns and communicate insights that support better decisions.</p>
 <div class="buttons">
 <a class="btn primary" href="#projects">View My Projects</a>
+<a class="btn secondary" href="Chidi_Onochie_Ronald_Resume_Data_Analyst.pdf" target="_blank" rel="noopener">Download CV</a>
+<a class="btn secondary" href="https://linkedin.com/in/chidionochie" target="_blank" rel="noopener">Connect on LinkedIn</a>
 <a class="btn secondary" href="#contact">Contact Me</a>
 </div>
 </div>
 <div class="profile-wrap"><img class="profile" src="images/profile-photo.jpg" alt="Professional portrait of Chidi Onochie Ronald"></div>
 </div>
 </header>
+
+<div class="marquee" aria-hidden="true">
+<div class="marquee-track">
+<span>Dashboards</span><span>KPI Reporting</span><span>Inventory Analysis</span><span>Stock Reconciliation</span><span>Supplier Performance</span><span>Logistics Analytics</span><span>SQL</span><span>Power BI</span>
+<span>Dashboards</span><span>KPI Reporting</span><span>Inventory Analysis</span><span>Stock Reconciliation</span><span>Supplier Performance</span><span>Logistics Analytics</span><span>SQL</span><span>Power BI</span>
+</div>
+</div>
+
+<div class="stats">
+<div class="stats-grid">
+<div class="stat"><strong>5+</strong><span>years working with inventory and operational data</span></div>
+<div class="stat"><strong>3</strong><span>end-to-end analytics projects across Excel, SQL and Power BI</span></div>
+<div class="stat"><strong>10,000+</strong><span>order lines cleaned and analysed in the e-commerce project</span></div>
+<div class="stat"><strong>7</strong><span>Power BI dashboard pages built across two projects</span></div>
+</div>
+</div>
 
 <section id="about">
 <div class="section-kicker">About Me</div>
@@ -390,6 +472,48 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 </section>
 
 
+<section id="solve">
+<div class="section-kicker">What I Do</div>
+<h2>Problems I Solve</h2>
+<p class="section-intro">Practical analytics for teams that need clearer numbers and faster decisions.</p>
+<div class="solve-grid">
+<div class="card solve-card"><h3>Know where stock stands</h3><p>Inventory and stock movement analysis, reconciliation and discrepancy investigation.</p></div>
+<div class="card solve-card"><h3>Spot replenishment risk early</h3><p>Identify low-stock, high-demand SKUs so replenishment can be prioritised.</p></div>
+<div class="card solve-card"><h3>Compare suppliers fairly</h3><p>Supplier scorecards that weigh cost, speed and quality, not a single metric.</p></div>
+<div class="card solve-card"><h3>Understand logistics costs</h3><p>Route, carrier and regional cost analysis to find avoidable spend.</p></div>
+<div class="card solve-card"><h3>Find where profit is lost</h3><p>Separate sales growth from profitable growth across products, regions and discounts.</p></div>
+<div class="card solve-card"><h3>Turn raw data into dashboards</h3><p>Clean data in SQL and Excel, then build Power BI reports with DAX measures.</p></div>
+</div>
+<div class="who">
+<h3>Who I work with</h3>
+<!-- EDIT: adjust this list to the kind of employers or teams you want to attract -->
+<p>Warehouse and inventory teams, logistics and procurement teams, NGOs and humanitarian programmes, retail and e-commerce businesses.</p>
+</div>
+</section>
+
+<section id="testimonials">
+<div class="section-kicker">Testimonials</div>
+<h2>What People Say</h2>
+<p class="section-intro">Feedback from colleagues and project teammates.</p>
+<div class="quote-grid">
+<!-- EDIT: replace each placeholder with a real quote (get permission first), name and role. Delete any you don't have. -->
+<div class="quote"><p>[Add a short quote from a supervisor or colleague at COOPI about your reporting and inventory work.]</p><cite>Name<span>Role, COOPI</span></cite></div>
+<div class="quote"><p>[Add a short quote from a teammate on the E-Commerce Sales Analytics project.]</p><cite>Phoebe or Toyeibat<span>Team member, E-Commerce Sales Analytics</span></cite></div>
+<div class="quote"><p>[Add a LinkedIn recommendation or a line from a trainer or mentor.]</p><cite>Name<span>Role</span></cite></div>
+</div>
+</section>
+
+<section id="work-links">
+<div class="section-kicker">Links</div>
+<h2>More of My Work</h2>
+<p class="section-intro">Source files, queries and dashboards beyond the case studies above.</p>
+<div class="link-cards">
+<a class="card link-card" href="https://github.com/onironald" target="_blank" rel="noopener"><h3>GitHub</h3><p>SQL scripts, Python notebooks and project files.</p><span class="go">View profile →</span></a>
+<!-- EDIT: replace the # links below with your real URLs (Power BI publish-to-web, Kaggle, Tableau Public, etc.) -->
+<a class="card link-card" href="#" target="_blank" rel="noopener"><h3>Live Power BI Reports</h3><p>Interactive versions of the dashboards shown above.</p><span class="go">Open reports →</span></a>
+<a class="card link-card" href="https://linkedin.com/in/chidionochie" target="_blank" rel="noopener"><h3>LinkedIn</h3><p>Career background, recommendations and updates.</p><span class="go">Connect →</span></a>
+</div>
+</section>
 
 <section id="experience" class="section">
 <div class="section-kicker">Experience</div>
@@ -561,19 +685,71 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 <div class="contact-inner">
 <div class="section-kicker">Contact</div>
 <h2>Let's Connect</h2>
-<p>If you would like to discuss a data analytics opportunity, project or collaboration, feel free to reach out.</p>
+<div class="contact-grid">
+<div>
+<p>If you would like to discuss a data analytics opportunity, project or collaboration, feel free to reach out. The fastest way to reach me is a phone call.</p>
+<div class="contact-actions">
+<a class="btn primary" href="tel:+2347030104356" style="border-bottom:none">Call Me</a>
+<button class="btn secondary copy-btn" type="button" id="copyEmail">Copy Email</button>
+<a class="btn secondary" href="Chidi_Onochie_Ronald_Resume_Data_Analyst.pdf" target="_blank" rel="noopener">Download CV</a>
+</div>
 <p><strong>Email:</strong> <a href="mailto:chidionochie@gmail.com">chidionochie@gmail.com</a></p>
 <p><strong>Phone:</strong> <a href="tel:+2347030104356">+234 703 010 4356</a></p>
 <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/chidionochie" target="_blank" rel="noopener">linkedin.com/in/chidionochie</a></p>
 <p><strong>GitHub:</strong> <a href="https://github.com/onironald" target="_blank" rel="noopener">github.com/onironald</a></p>
 <p><strong>Portfolio:</strong> <a href="https://onironald.github.io/" target="_blank" rel="noopener">onironald.github.io</a></p>
- <p><strong>Resume:</strong> <a href="Chidi_Onochie_Ronald_Resume_Data_Analyst.pdf" target="_blank" rel="noopener">Download PDF</a></p>
+<p><strong>Resume:</strong> <a href="Chidi_Onochie_Ronald_Resume_Data_Analyst.pdf" target="_blank" rel="noopener">Download PDF</a></p>
+</div>
+<form class="form" id="enquiryForm">
+<h3 style="margin-top:0">Send an enquiry</h3>
+<div class="field"><label for="fName">Your name</label><input id="fName" type="text" required autocomplete="name"></div>
+<div class="field"><label for="fEmail">Your email</label><input id="fEmail" type="email" required autocomplete="email"></div>
+<div class="field"><label for="fType">What is this about?</label>
+<select id="fType">
+<option>Job opportunity</option>
+<option>Dashboard or reporting project</option>
+<option>Inventory or supply chain analysis</option>
+<option>SQL or Power BI work</option>
+<option>Collaboration</option>
+<option>Something else</option>
+</select></div>
+<div class="field"><label for="fMsg">Message</label><textarea id="fMsg" required></textarea></div>
+<button class="btn primary" type="submit">Send by email</button>
+<p class="form-note">This opens your email app with the message ready to send.</p>
+</form>
+</div>
 </div>
 </section>
 
 <footer>© 2026 CHIDI ONOCHIE RONALD • Data Analyst | Supply Chain &amp; Operations Analytics</footer>
 
-
+<script>
+(function(){
+  var email="chidionochie@gmail.com";
+  var copyBtn=document.getElementById("copyEmail");
+  if(copyBtn){
+    copyBtn.addEventListener("click",function(){
+      function done(){copyBtn.textContent="Copied!";setTimeout(function(){copyBtn.textContent="Copy Email"},2000)}
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(email).then(done,function(){window.prompt("Copy this email:",email)});
+      }else{window.prompt("Copy this email:",email)}
+    });
+  }
+  var form=document.getElementById("enquiryForm");
+  if(form){
+    form.addEventListener("submit",function(e){
+      e.preventDefault();
+      var name=document.getElementById("fName").value.trim();
+      var from=document.getElementById("fEmail").value.trim();
+      var type=document.getElementById("fType").value;
+      var msg=document.getElementById("fMsg").value.trim();
+      var subject="Portfolio enquiry: "+type;
+      var body=msg+"\n\n— "+name+" ("+from+")";
+      window.location.href="mailto:"+email+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+    });
+  }
+})();
+</script>
 
 </body>
 </html>
