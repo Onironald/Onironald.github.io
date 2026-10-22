@@ -235,6 +235,22 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
   .solve-grid,.quote-grid,.link-cards,.contact-grid{grid-template-columns:1fr}
     .stats{margin-top:28px}
 }
+/* ---- Mobile menu ---- */
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:42px;height:42px;cursor:pointer;font-size:22px;line-height:1;color:var(--text)}
+@media(max-width:800px){
+  .menu-btn{display:block}
+  .nav{position:relative}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:8px 24px 16px;flex-direction:column;box-shadow:var(--shadow-md)}
+  .nav-links.open{display:flex}
+  .nav-links a{margin:0;padding:12px 0;border-bottom:1px solid var(--line)}
+  .nav-links a::after{display:none}
+}
+
+/* ---- Key takeaway ---- */
+.takeaway{background:var(--accent-light);border:1px solid #d6dcf5;border-left:4px solid var(--accent);border-radius:12px;padding:18px 22px;margin:22px 0}
+.takeaway h4{margin:0 0 8px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:800}
+.takeaway p{margin:0 0 6px;color:#374151;font-size:15.5px}
+.takeaway p:last-child{margin-bottom:0}
 </style>
 
 </head>
@@ -244,7 +260,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 <div class="logo">CHIDI ONOCHIE RONALD</div>
 <div class="nav-links">
 <a href="#about">About</a><a href="#projects">Projects</a><a href="#solve">Services</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="Chidi_Onochie_Ronald_Resume_Data_Analyst.pdf" target="_blank" rel="noopener">Resume</a><a href="#contact">Contact</a>
-</div>
+</div><button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
 </div>
 </nav>
 
@@ -491,7 +507,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 </div>
 </section>
 
-<section id="testimonials">
+<section id="testimonials" hidden>
 <div class="section-kicker">Testimonials</div>
 <h2>What People Say</h2>
 <p class="section-intro">Feedback from colleagues and project teammates.</p>
