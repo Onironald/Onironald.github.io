@@ -766,6 +766,19 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
   }
 })();
 </script>
-
+<script>
+(function(){
+  var btn=document.getElementById("menuBtn");
+  var links=document.querySelector(".nav-links");
+  if(!btn||!links)return;
+  function close(){links.classList.remove("open");btn.setAttribute("aria-expanded","false");btn.textContent="☰";}
+  btn.addEventListener("click",function(){
+    var open=links.classList.toggle("open");
+    btn.setAttribute("aria-expanded",open?"true":"false");
+    btn.textContent=open?"✕":"☰";
+  });
+  links.addEventListener("click",function(e){if(e.target.tagName==="A")close();});
+})();
+</script>
 </body>
 </html>
