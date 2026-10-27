@@ -153,20 +153,22 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 .dashboard-shot img{display:block;width:100%;height:auto;transition:transform .5s ease}
 .dashboard-shot:hover img{transform:scale(1.03)}
 .dashboard-shot figcaption{padding:13px 16px;font-weight:700;font-size:13.5px;color:var(--muted);border-top:1px solid var(--line)}
+.dashboard-gallery .dashboard-shot:last-child:nth-child(odd){grid-column:1/-1}
 @media(max-width:800px){.dashboard-gallery{grid-template-columns:1fr}}
+.skills-cards .card:last-child{grid-column:1/-1}
+@media(max-width:800px){.skills-cards .card:last-child{grid-column:auto}}
+.dashboard-gallery .dashboard-shot:last-child:nth-child(odd){grid-column:1/-1}
+@media(max-width:800px){.dashboard-gallery{grid-template-columns:1fr}}
+.skills-cards .card:last-child{grid-column:1/-1}
+@media(max-width:800px){.skills-cards .card:last-child{grid-column:auto}}
+
 
 .portfolio-dashboard{margin:30px 0 12px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:var(--shadow-md);transition:box-shadow .25s ease}
 .portfolio-dashboard:hover{box-shadow:var(--shadow-lg)}
 .portfolio-dashboard img{display:block;width:100%;height:auto;border-radius:12px}
 .dashboard-caption{font-size:14px;color:var(--muted);font-weight:700;margin:12px 6px 2px}
 
-.logistics-dashboard-gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px}
-.logistics-dashboard-shot{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow .25s ease,transform .25s ease}
-.logistics-dashboard-shot:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
-.logistics-dashboard-shot img{display:block;width:100%;height:auto;transition:transform .5s ease}
-.logistics-dashboard-shot:hover img{transform:scale(1.03)}
-.logistics-dashboard-shot figcaption{padding:13px 16px;font-weight:700;font-size:13.5px;color:var(--muted);border-top:1px solid var(--line)}
-@media(max-width:800px){.logistics-dashboard-gallery{grid-template-columns:1fr}}
+
 </style>
 <style>
 .dataset-section{margin:38px 0 46px;padding:30px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,#fbfcff,#ffffff);box-shadow:var(--shadow-sm)}
@@ -259,7 +261,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 <div class="nav">
 <div class="logo">CHIDI ONOCHIE RONALD</div>
 <div class="nav-links">
-<a href="#about">About</a><a href="#projects">Projects</a><a href="#solve">Services</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="Chidi_Onochie_Ronald_Resume_Data_Analyst.pdf" target="_blank" rel="noopener">Resume</a><a href="#contact">Contact</a>
+<a href="#about">About</a><a href="#projects">Projects</a><a href="#solve">What I Do</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="Chidi_Onochie_Ronald_Resume_Data_Analyst.pdf" target="_blank" rel="noopener">Resume</a><a href="#contact">Contact</a>
 </div><button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
 </div>
 </nav>
@@ -573,7 +575,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 <h2>Skills &amp; Technical Tools</h2>
 <p class="section-intro">A combination of practical operations knowledge and hands-on analytics capability.</p>
 
-<div class="cards">
+<div class="cards skills-cards"></div>
 
   <!-- Data Analysis -->
   <div class="card">
@@ -647,19 +649,16 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
     <div class="skill-title">
       <h3>Python</h3>
     </div>
-    <ul>
-      <li>Python for Data Analysis</li>
-      <li>Pandas</li>
-      <li>NumPy</li>
-      <li>Data Cleaning &amp; Preprocessing</li>
-      <li>Exploratory Data Analysis (EDA)</li>
-      <li>Data Transformation &amp; Aggregation</li>
-      <li>Statistical Analysis</li>
-      <li>Data Visualization</li>
-      <li>Matplotlib</li>
-      <li>Seaborn</li>
-      <li>Jupyter Notebook</li>
-    </ul>
+    <p>
+  Python for Data Analysis<br>
+  Pandas &amp; NumPy<br>
+  Data Cleaning &amp; Preprocessing<br>
+  Exploratory Data Analysis (EDA)<br>
+  Data Transformation &amp; Aggregation<br>
+  Statistical Analysis<br>
+  Data Visualization (Matplotlib, Seaborn)<br>
+  Jupyter Notebook
+</p>
   </div>
 
   <!-- Supply Chain & Business Analytics -->
