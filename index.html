@@ -352,7 +352,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 
 <div class="dataset-section">
 <h3>Understanding the Dataset</h3>
-<p class="dataset-intro"><strong>What this data represents:</strong> This is a transaction-level retail sales dataset. The analysis contains <strong>1,000 actual sales transactions</strong> across <strong>3 branches</strong> and <strong>5 product categories</strong>. The source presentation describes the file as 1,001 rows including the header and 13 columns.</p>
+<p class="dataset-intro"><strong>What this data represents:</strong> This is a transaction-level retail sales dataset. The analysis contains <strong>1,000 actual sales transactions</strong> across <strong>3 branches</strong> and <strong>5 product categories</strong>.The file as 1,001 rows including the header and 13 columns.</p>
 <p class="dataset-intro"><strong>How to read one row:</strong> Each row represents a retail purchase record. It combines information about the branch, product, customer type, gender, quantity purchased and the value of the transaction. That means the dataset lets us move from individual transactions to branch, product and customer-level performance.</p>
 <div class="dataset-grid">
 <div class="dataset-card"><h4>Where?</h4><p>Branch A — New York; Branch B — Los Angeles; Branch C — Chicago.</p></div>
@@ -370,7 +370,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 </tbody></table>
 <h4>What we checked before analysing</h4>
 <ul><li>No missing values were found across the 1,000 records.</li><li>Unit Price, Quantity and Total Price were validated as numeric fields.</li><li>Duplicate records were checked and none were found.</li><li>Branch/city labels were standardised, including correcting Chicago entries to Branch C.</li><li>XLOOKUP was used to validate product-category assignments.</li><li>An <strong>Is_Outliers</strong> column was created using the IQR method; 15 transactions above the $382.93 upper bound were flagged as extreme-spend transactions.</li></ul>
-<div class="dataset-note"><strong>What this dataset can answer:</strong> Which branches generate the most revenue? Which products and categories sell the most? Do members spend differently from normal customers? How do purchasing patterns differ by gender? Are there unusually large transactions?<br><br><strong>What it cannot answer well:</strong> Because there is no transaction date/time field, it cannot reliably support monthly trends, seasonality, forecasting or year-over-year growth analysis. The presentation also notes that customer history, promotions, inventory levels and richer demographics are unavailable.</div>
+<div class="dataset-note"><strong>What this dataset can answer:</strong> Which branches generate the most revenue? Which products and categories sell the most? Do members spend differently from normal customers? How do purchasing patterns differ by gender? Are there unusually large transactions?<br><br><strong>What it cannot answer well:</strong> Because there is no transaction date/time field, it cannot reliably support monthly trends, seasonality, forecasting or year-over-year growth analysis. customer history, promotions, inventory levels and richer demographics are unavailable.</div>
 </div>
 <h3>Dashboard</h3>
 <p>The Excel dashboard brings the analysis together through revenue, order, quantity, customer, category, branch, gender and outlier views.</p>
@@ -388,9 +388,9 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 <li><strong>Extreme-spend transactions:</strong> 1.5%</li>
 </ul>
 <h3>Business Recommendations</h3>
-<p>The presentation recommends prioritising high-performing categories, strengthening member-focused strategies, investigating branch differences, monitoring extreme transactions and using the findings to support inventory and promotional decisions.</p>
+<p>I recommend prioritising high-performing categories, strengthening member-focused strategies, investigating branch differences, monitoring extreme transactions and using the findings to support inventory and promotional decisions.</p>
 <h3>Limitation</h3>
-<p>The presentation notes that the dataset did not contain a date/time field, limiting time-series and seasonal analysis.</p>
+<p>The dataset did not contain a date/time field, limiting time-series and seasonal analysis.</p>
 </section>
 
 
@@ -444,7 +444,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 <li><strong>Supplier decisions:</strong> The analysis supports evaluating suppliers across cost, speed and quality rather than using a single metric.</li>
 </ul>
 <h3>Business Recommendations</h3>
-<p>The presentation recommends replenishing the identified low-stock SKUs, reviewing Supplier 4, investigating regional logistics costs, and implementing a supplier scorecard covering cost, speed and quality.</p>
+<p>I recommend replenishing the identified low-stock SKUs, reviewing Supplier 4, investigating regional logistics costs, and implementing a supplier scorecard covering cost, speed and quality.</p>
 </section>
 
 
@@ -499,7 +499,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 <li>Regional margins varied, highlighting differences in profitability by geography.</li>
 </ul>
 <h3>Business Recommendations</h3>
-<p>The presentation recommends using discount thresholds, reviewing weak-margin products, monitoring regional profitability and using customer, product and shipping insights to support more informed commercial decisions.</p>
+<p>We recommend using discount thresholds, reviewing weak-margin products, monitoring regional profitability and using customer, product and shipping insights to support more informed commercial decisions.</p>
 </section>
 
 
