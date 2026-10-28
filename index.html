@@ -252,6 +252,13 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 .open-to-label::before{content:"";width:8px;height:8px;border-radius:50%;background:#22c55e;flex:none}
 .role-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .role-chips span{padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);color:#e2e8f0;font-size:13px;font-weight:600}
+/* ---- Certifications ---- */
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.cert .cert-issuer{font-size:12.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
+.cert h3{margin:0 0 8px;font-size:19px}
+.cert p{margin:0 0 6px;color:var(--muted);font-size:15px}
+.cert .cert-meta{font-size:13.5px;font-weight:600;color:#374151}
+@media(max-width:850px){.cert-grid{grid-template-columns:1fr}}
 /* ---- Key takeaway ---- */
 .takeaway{background:var(--accent-light);border:1px solid #d6dcf5;border-left:4px solid var(--accent);border-radius:12px;padding:18px 22px;margin:22px 0}
 .takeaway h4{margin:0 0 8px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:800}
@@ -726,6 +733,25 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 </div>
 </section>
 
+<section id="certifications" class="section">
+<div class="section-kicker">Certifications</div>
+<h2>Certificates</h2>
+<p class="section-intro">Formal training completed in data analysis.</p>
+<div class="cert-grid">
+<div class="card cert">
+<p class="cert-issuer">TechCrush</p>
+<h3>Data Analysis Bootcamp Scholarship (Beginners)</h3>
+<p>15-week bootcamp programme in Data Analysis. Accredited by the American Council of Training and Development (ACTD), USA, as stated on the certificate.</p>
+<p class="cert-meta">Completed 22 October 2026 &bull; Certificate ID: TEC-132792D4</p>
+</div>
+<div class="card cert">
+<p class="cert-issuer">Cirvee Tech Academy</p>
+<h3>Data Analysis Course</h3>
+<p>Certificate of completion for the Data Analysis Course.</p>
+<p class="cert-meta">Completed September 2026</p>
+</div>
+</div>
+</section>
 <section id="contact" class="contact">
 <div class="contact-inner">
 <div class="section-kicker">Contact</div>
