@@ -261,6 +261,8 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 .cert p{margin:0 0 6px;color:var(--muted);font-size:15px}
 .cert .cert-meta{font-size:13.5px;font-weight:600;color:#374151}
 @media(max-width:850px){.cert-grid{grid-template-columns:1fr}}
+/* ---- Anchor offset ---- */
+section{scroll-margin-top:72px}
 /* ---- Key takeaway ---- */
 .takeaway{background:var(--accent-light);border:1px solid #d6dcf5;border-left:4px solid var(--accent);border-radius:12px;padding:18px 22px;margin:22px 0}
 .takeaway h4{margin:0 0 8px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:800}
@@ -379,7 +381,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 
 <div class="dataset-section">
 <h3>Understanding the Dataset</h3>
-<p class="dataset-intro"><strong>What this data represents:</strong> This is a transaction-level retail sales dataset. The analysis contains <strong>1,000 actual sales transactions</strong> across <strong>3 branches</strong> and <strong>5 product categories</strong>.The file has 1,001 rows including the header and 13 columns.</p>
+<p class="dataset-intro"><strong>What this data represents:</strong> This is a transaction-level retail sales dataset. The analysis contains <strong>1,000 actual sales transactions</strong> across <strong>3 branches</strong> and <strong>5 product categories</strong>. The file has 1,001 rows including the header and 13 columns.</p>
 <p class="dataset-intro"><strong>How to read one row:</strong> Each row represents a retail purchase record. It combines information about the branch, product, customer type, gender, quantity purchased and the value of the transaction. That means the dataset allows me to move from individual transactions to branch, product and customer-level performance.</p>
 <div class="dataset-grid">
 <div class="dataset-card"><h4>Where?</h4><p>Branch A — New York; Branch B — Los Angeles; Branch C — Chicago.</p></div>
@@ -427,7 +429,7 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 <p class="tools">MySQL • SQL • Power BI • Supply Chain Analytics</p>
 <div class="takeaway">
 <h4>Key takeaway</h4>
-<p><strong>Finding:</strong> 26 low-stock SKUs and 1 out-of-stock product, with 13 of the low-stock SKUs already selling 500+ units. Chennai's average logistics cost (621.75) was far above Mumbai's (428.34), a gap of about 45% (cost units as recorded in the dataset).</p>
+<p><strong>Finding:</strong> 26 low-stock SKUs and 1 out-of-stock product, with 13 of the low-stock SKUs already selling 500+ units. Chennai's average logistics cost (621.75) was far above Mumbai's (428.34), about 45% higher (in the dataset's cost units).</p>
 <p><strong>Recommendation:</strong> Replenish the flagged SKUs, review Supplier 4 and introduce a supplier scorecard covering cost, speed and quality.</p>
 </div>
 <h3>Project Type</h3>
