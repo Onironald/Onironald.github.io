@@ -191,6 +191,11 @@ footer{text-align:center;padding:28px;color:var(--muted);font-size:13px;backgrou
 .stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;box-shadow:var(--shadow-md);text-align:left}
 .stat strong{display:block;font-size:clamp(28px,3.6vw,38px);font-weight:800;color:var(--accent);letter-spacing:-0.02em;line-height:1.1}
 .stat span{display:block;margin-top:8px;color:var(--muted);font-size:14px;line-height:1.5}
+.exp-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0 18px}
+.exp-metrics .stat{padding:16px 14px;box-shadow:var(--shadow-sm)}
+.exp-metrics .stat strong{font-size:clamp(22px,4.5vw,30px)}
+.exp-metrics .stat span{margin-top:6px;font-size:13px}
+@media (max-width:520px){.exp-metrics{grid-template-columns:1fr}}
 
 .marquee{overflow:hidden;background:var(--dark-2);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:14px 0;margin-top:0}
 .marquee-track{display:flex;gap:48px;width:max-content;animation:scroll 32s linear infinite}
@@ -578,13 +583,21 @@ section{scroll-margin-top:72px}
 <h2>Professional Experience</h2>
 <p class="section-intro">Over five years of experience working with inventory, supply chain and operational data, combining practical operations knowledge with reporting and analysis.</p>
 <div class="experience">
-<div class="role"><h3>Warehouse Supervisor | Supply Chain &amp; Inventory Analyst</h3><p class="tools">COOPI – Cooperazione Internazionale | Jan 2021 – Present</p><ul>
-<li>Analyse warehouse and inventory data across multiple locations to track stock movement, identify discrepancies and support operational planning.</li>
-<li>Prepare daily, weekly and monthly Excel reports that provide timely insights for management planning and decision-making.</li>
-<li>Reconcile inventory records against GRNs, Waybills, Dispatch Notes, Bin Cards and Stock Cards to investigate and resolve discrepancies.</li>
-<li>Maintain accurate inventory records through stock counts, reconciliation and FIFO/FEFO practices.</li>
+<div class="role"><h3>Warehouse Supervisor | Supply Chain &amp; Inventory Analyst</h3><p class="tools">COOPI – Cooperazione Internazionale | Jan 2021 – Mar 2026</p>
+<div class="exp-metrics">
+<div class="stat"><strong>9,500 MT</strong><span>approx. food commodities overseen</span></div>
+<div class="stat"><strong>16</strong><span>warehouse locations supervised</span></div>
+<div class="stat"><strong>5</strong><span>LGAs covered</span></div>
+</div>
+<ul>
+
+<li>Supervised warehouse and inventory operations across 16 warehouse locations in five LGAs over different periods under the WFP General Food Distribution programme, overseeing approximately 9,500 MT of food commodities.</li>
+<li>Prepared and consolidated daily, weekly, and monthly inventory reports using Excel and WFP LESS, supporting management decision-making and operational planning.</li>
+<li>Conducted regular stock reconciliations and physical inventory counts against GRNs, Waybills, Dispatch Notes, Bin Cards and Stock Cards, identifying and resolving discrepancies before management reporting.</li>
+<li>Analysed commodity receipts, dispatches, and stock movements to maintain accurate inventory records using FIFO/FEFO practices, strengthen accountability, and support audit readiness.</li>
 <li>Provide inventory data to procurement and logistics teams to support procurement planning and collaborate with finance and programme teams.</li>
-<li>Maintain complete documentation for internal and external audits.</li></ul></div>
+</ul></div>
+
 <div class="role"><h3>Tally Clerk</h3><p class="tools">COOPI – Cooperazione Internazionale | Aug 2020 – Dec 2020</p><ul>
 <li>Verified incoming and outgoing commodity data against delivery documentation.</li>
 <li>Identified and resolved stock discrepancies through physical quantity checks.</li>
