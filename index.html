@@ -280,16 +280,33 @@ section{scroll-margin-top:72px}
 .takeaway h4{margin:0 0 8px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:800}
 .takeaway p{margin:0 0 6px;color:#374151;font-size:15.5px}
 .takeaway p:last-child{margin-bottom:0}
-</style>
-  ...your other CSS above...
-
 /* Dark band: Problems I Solve */
 #solve{
-  ...
+  background:var(--dark);
+  color:#fff;
+  box-shadow:0 0 0 100vmax var(--dark);
+  clip-path:inset(0 -100vmax);
 }
+#solve h2{color:#fff}
+#solve .section-intro{color:#b9c2d4}
+#solve .solve-card{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:none;
+}
+#solve .solve-card:hover{
+  background:rgba(255,255,255,.08);
+  border-color:rgba(147,197,253,.45);
+}
+#solve .solve-card h3{color:#fff}
+#solve .solve-card p{color:#b9c2d4}
+#solve .who{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.12);
+}
+#solve .who h3{color:#fff}
 #solve .who p{color:#b9c2d4}
 </style>
-</head>
 </head>
 <body>
 <nav>
