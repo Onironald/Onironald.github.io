@@ -281,12 +281,18 @@ section{scroll-margin-top:72px}
 .takeaway p{margin:0 0 6px;color:#374151;font-size:15.5px}
 .takeaway p:last-child{margin-bottom:0}
 /* Dark band: Problems I Solve */
-#solve{
-  background:var(--dark);
-  color:#fff;
-  box-shadow:0 0 0 100vmax var(--dark);
-  clip-path:inset(0 -100vmax);
+#solve{position:relative;isolation:isolate;color:#fff}
+#solve::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:0;bottom:0;
+  left:50%;
+  width:100vw;
+  transform:translateX(-50%);
+  background:radial-gradient(1200px 600px at 15% -10%,#16234a 0%,var(--dark) 55%),var(--dark);
 }
+body{overflow-x:clip}
 #solve h2{color:#fff}
 #solve .section-intro{color:#b9c2d4}
 #solve .solve-card{
